@@ -89,7 +89,6 @@ public class PersonagemController {
         return ResponseEntity.ok(atualizado);
     }
 
-    // Corrigido: caminho distinto para evitar conflito com alterar()
     @PutMapping("/{id}/campanha")
     public ResponseEntity<Personagem> inserirNaCampanha(@PathVariable Long id) {
         Personagem atualizado = service.inserirNaCampanha(id);
